@@ -1,0 +1,15 @@
+[Unit]
+DefaultDependencies=no
+Description=Bring up high-speed network interfaces
+Before=network-pre.target
+Wants=network-pre.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/cx-lx2-network.sh
+TimeoutSec=0
+RemainAfterExit=yes
+
+[Install]
+RequiredBy=network.target
+
