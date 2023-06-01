@@ -5,7 +5,7 @@
 # Clearfog / Honeycomb
 
 
-for n in {3..10}
+for n in {7..10}
 	do /usr/local/bin/ls-addni dpmac.$n
 done
 
