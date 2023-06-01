@@ -6,7 +6,7 @@
 
 
 for n in {7..10}
-	do /usr/local/bin/ls-addni dpmac.$n
+	do /usr/bin/ls-addni dpmac.$n
 done
 
 
